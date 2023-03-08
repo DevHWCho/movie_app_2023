@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>grid_2</title>
+</head>
+<style>
+.wrap > div {padding: 10px; font-size: 20px; background-color: aqua;}
+div.wrap {display: grid; grid-template-rows: 50px 150px 50px; grid-template-columns: repeat(2, 30% 70%); grid-gap: 10px;}
+.header {grid-row: 1 / 2; grid-column: 1 / -1;}
+.snb {grid-row: 2 / 3; grid-column: 1 / 2;}
+.content {grid-row: 2 / 3; grid-column: 2 / 3;}
+.footer {grid-row: 3 / 4; grid-column: 1 / -1;}
+</style>
+<body>
+  <div class="wrap">
+    <div class="header">header</div>
+    <div class="snb">sidemenu</div>
+    <div class="content">content</div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
