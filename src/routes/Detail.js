@@ -5,7 +5,7 @@ import '../styles/Detail.css'
 function Detail() {
   const location = useLocation(); //주소를 통해(/detail) 내용을 가져올 때 사용
   console.log(location);
-  const {genres,id,poster,summary,title,year} = location.state;
+  const {genres,poster,summary,title,year} = location.state;
   return (
     <div className='detail'>
 
